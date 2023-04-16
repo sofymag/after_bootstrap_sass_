@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,106 @@
     <!-- LINK SEO -->
     <meta name="description" content="breve texto descriptivo sobre el texto y la pagina">
     <meta name="keywords" content="palabras claves separadas por coma">
+    <!-- LINK AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!--LINK CSS-->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-lg-12 col-12">
+                <!-- LOGO + NAV -->
+                <nav class="navbar navbar-expand-lg bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Navbar</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link" href="#">NOSOTROS</a>
+                                <a class="nav-link" href="#">CONTACTO</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="row">
+            <div class="col-lg-12 col-12">
+                <!-- CARRUSEL -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/header_nosotros.jpg" class="d-block w-100" alt="jugadores nba">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/header_somos.jpg" class="d-block w-100" alt="jugadores nba">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/header_nosotros.jpg" class="d-block w-100" alt="jugadores nba">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-12 col-12">
+                <h1 data-aos="fade-up" 
+                data-aos-duration="3000">BIENVENIDOS</h1>
+            </div>
+            <div class="col-lg-6 col-12">
+                <p data-aos="fade-up" data-aos-duration="3000">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae corrupti nihil cum fuga! Mollitia
+                    vitae aliquam unde nulla necessitatibus ex, culpa beatae quo reprehenderit veritatis magnam quas
+                    consequatur distinctio neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum illum
+                    a voluptatibus repellat. Suscipit recusandae cumque maxime ipsa voluptatum sit deserunt! Animi odit
+                    est fugit unde? Placeat voluptas expedita quaerat. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Consequuntur soluta iure, eveniet expedita magni delectus? Quisquam saepe mollitia
+                    possimus eligendi magni adipisci omnis accusamus rerum similique fugiat? Praesentium, vero
+                    voluptates!</p>
+                </div>
+                <div class="col-lg-6 col-12">
+                     <img src="img/img_kyrie.jpg" class="img-fluid" alt="jugadores nba"
+                     data-aos="fade-up" data-aos-duration="3000">
+               </div>
+        </main>
+        <footer class="row">
+            <div class="col-lg-4 col-12">LOGO</div>
+            <div class="col-lg-4 col-12">REDES SOCIALES</div>
+            <div class="col-lg-4 col-12">CONTACTO</div>
+        </footer>
+    </div>
+    <!-- SCRIPT BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- SCRIPT AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>

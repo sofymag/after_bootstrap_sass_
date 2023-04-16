@@ -46,9 +46,10 @@
 // 4. Change the default tap highlight to be completely transparent in iOS.
 
 // scss-docs-start reboot-body-rules
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body {
   margin: 0; // 1
-  font-family: var(--#{$prefix}body-font-family);
+  font-family:'Poppins', sans-serif!important;
   @include font-size(var(--#{$prefix}body-font-size));
   font-weight: var(--#{$prefix}body-font-weight);
   line-height: var(--#{$prefix}body-line-height);
